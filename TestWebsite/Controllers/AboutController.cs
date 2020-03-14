@@ -11,6 +11,17 @@ namespace TestWebsite.Controllers {
         public IActionResult Index() {            
             return View();
         }
+        /// <summary>
+        /// We can pass an id to the method, so localhost5000.../about/tellmemore/yo, 
+        /// yo will be our parameter. null if we don't give it empty string value initially
+        /// and don't supply a parameter in the url field
+        /// </summary>
+        /// <param name="id">Our id name has to match with our routing map in Startup</param>
+        /// <returns></returns>
+        public IActionResult TellMeMore(string id = "") {
+            //return new JsonResult(new {name = "TellMeMore", content = moreInfo });
+            return View();
+        }
         
     }
 }

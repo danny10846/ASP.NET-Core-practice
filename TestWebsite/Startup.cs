@@ -38,6 +38,7 @@ namespace TestWebsite {
 
             app.UseAuthorization();
             //Everything in our URL, after default gets put through this routing system
+            //Pretend https//localhost:5000/... is before our pattern
             app.UseEndpoints(endpoints => {
                 endpoints.MapControllerRoute(
                     name: "default",
