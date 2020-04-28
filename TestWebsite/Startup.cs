@@ -31,7 +31,7 @@ namespace TestWebsite {
                 app.UseHsts();
             }
             app.UseHttpsRedirection();
-            //Allows us to route to any static files in wwwroot
+            //Allows us to route to any static files in wwwroot, /...style.css should show us the css code within style.css as long as this line of code is here.
             app.UseStaticFiles();
             
             app.UseRouting();
