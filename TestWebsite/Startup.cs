@@ -43,6 +43,12 @@ namespace TestWebsite {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+                //We can create custom endpoints, so if I now do '.../more/hello' in my website url, it will point to Abouts TellMeMore method, 
+                //Along with the correct id parameter of 'hello' within the method.
+                endpoints.MapControllerRoute(
+                    name: "about",                    
+                    pattern: "more/{yo?}",
+                    defaults : new { controller = "About", action = "TellMeMore" });
             });
         }
     }

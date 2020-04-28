@@ -16,9 +16,9 @@ namespace TestWebsite.Controllers {
         /// yo will be our parameter. null if we don't give it empty string value initially
         /// and don't supply a parameter in the url field
         /// </summary>
-        /// <param name="id">Our id name has to match with our routing map in Startup</param>
+        /// <param name="yo">Our id name has to match with our routing map in Startup</param>
         /// <returns></returns>
-        public IActionResult TellMeMore(string id = "") {
+        public IActionResult TellMeMore(string yo = "") {
             //return new JsonResult(new {name = "TellMeMore", content = moreInfo });
             return View();
         }
