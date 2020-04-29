@@ -19,7 +19,7 @@ namespace TestWebsite.Controllers {
         /// <param name="yo">Our id name has to match with our routing map in Startup</param>
         /// <returns></returns>
         public IActionResult TellMeMore(string yo = "") {
-            //return new JsonResult(new {name = "TellMeMore", content = moreInfo });
+            //return new JsonResult(new {name = "TellMeMore", content = moreInfo }); <---- JSON return for API calls etc
             return View();
         }
         
